@@ -1,0 +1,5 @@
+Namespace(seed=1, use_cuda='True', use_wandb=False, wandb_project_name='test', exp='test', dataset='cifar10', batch_size=64, amplitude_cut_range=10, phase_cut_range=10, delta=0.3, forward_noise_steps=50, def_max_timesteps='1000', def_num_denoising_steps='100', def_sampling_method='ddpm', att_max_timesteps='1000', att_num_denoising_steps='1', att_sampling_method='ddpm', attack_method='pgd', n_iter=200, eot=20, num_ensemble_runs=10)
+rank 0 | world_size 1 started
+Namespace(seed=1, use_cuda='True', use_wandb=False, wandb_project_name='test', exp='test', dataset='cifar10', batch_size=64, amplitude_cut_range=10, phase_cut_range=10, delta=0.3, forward_noise_steps=50, def_max_timesteps='1000', def_num_denoising_steps='100', def_sampling_method='ddpm', att_max_timesteps='1000', att_num_denoising_steps='1', att_sampling_method='ddpm', attack_method='pgd', n_iter=200, eot=20, num_ensemble_runs=10)
+rank 0 | world_size 1 started
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to /home/yneversky/data/CIFAR10/cifar-10-python.tar.gz
