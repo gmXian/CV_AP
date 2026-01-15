@@ -114,8 +114,8 @@ def test(rank, world_size, args):
     correct_adv = torch.tensor([0]).to(device)
     total = torch.tensor([0]).to(device)
 
-    for idx, (x, y) in enumerate(testLoader):
-        
+    
+    if True:
         # Load models
         clf, diffusion = load_models(args, model_src, device)
 
@@ -182,6 +182,7 @@ def test(rank, world_size, args):
 
         clf.eval()
         diffusion.eval()
+    for idx, (x, y) in enumerate(testLoader):
         x = x.to(device)
         y = y.to(device)
 
