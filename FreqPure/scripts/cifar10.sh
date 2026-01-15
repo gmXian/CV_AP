@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1  ddp_test.py --amplitude_cut_range 10 --phase_cut_range 10 --delta 0.3 --def_max_timesteps 1000 --def_num_denoising_steps 100 --att_max_timesteps 1000 --att_num_denoising_steps 1 -- num_ensemble_runs 10
