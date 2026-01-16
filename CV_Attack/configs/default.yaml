@@ -1,0 +1,18 @@
+model: resnet18
+dataset: cifar10
+data_root: ./data
+batch_size: 128
+num_workers: 4
+attack: pgd
+eps: 0.03137254901960784  # 8/255
+alpha: 0.00784313725490196 # 2/255
+steps: 10
+random_start: true
+norm: linf
+save_dir: ./outputs/cifar10_resnet18_pgd
+save_images: true
+save_delta: false
+limit: 0
+seed: 0
+device: cuda
+ckpt: null
