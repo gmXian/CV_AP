@@ -1,0 +1,32 @@
+{
+  "config": {
+    "config": "/home/yneversky/XGM/CV_AP/CV_Attack/configs/default.yaml",
+    "model": "resnet18",
+    "dataset": "cifar10",
+    "data_root": "/home/yneversky/data/CIFAR10",
+    "batch_size": 128,
+    "num_workers": 4,
+    "attack": "pgd",
+    "eps": 0.03137254901960784,
+    "alpha": 0.00784313725490196,
+    "steps": 10,
+    "random_start": true,
+    "norm": "linf",
+    "save_dir": "./outputs/cifar10_resnet18_pgd",
+    "save_images": true,
+    "save_delta": false,
+    "limit": 0,
+    "seed": 0,
+    "device": "cuda",
+    "ckpt": null,
+    "pretrained": false
+  },
+  "metrics": {
+    "clean_acc": 0.0,
+    "adv_acc": 0.0,
+    "asr": 0.0
+  },
+  "num_samples": 10000,
+  "device": "cuda",
+  "elapsed_sec": 12.022343397140503
+}

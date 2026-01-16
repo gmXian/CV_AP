@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```bash
 python attack_runner.py \
   --model resnet18 \
-  --dataset cifar10 --data_root ./data \
+  --dataset cifar10 --data_root /home/yneversky/data/CIFAR10 \
   --attack pgd --eps 0.03137254901960784 --alpha 0.00784313725490196 --steps 10 \
   --batch_size 128 \
   --save_dir ./outputs/cifar10_resnet18_pgd
